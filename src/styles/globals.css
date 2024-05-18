@@ -10,8 +10,7 @@ body {
 }
 
 main {
-  padding: 20px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 60px);
   overflow: scroll;
   text-align: center;
 }
@@ -40,6 +39,11 @@ a {
 .app {
   display: flex;
   flex-direction: column;
+}
+
+.app-page {
+  padding: 20px;
+  min-height: calc(100vh - 60px - 80px)
 }
 
 .small-text {
