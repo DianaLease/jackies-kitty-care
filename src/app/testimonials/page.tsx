@@ -4,7 +4,7 @@ import illustration from "../../../public/purr-24.png";
 export default function Testimonials() {
   return (
     <div>
-      <h1>What Clients Are Saying</h1>
+      <h1>What My Clients Are Saying</h1>
       <Image
         src={illustration}
         height={200}

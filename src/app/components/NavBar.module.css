@@ -2,6 +2,9 @@
   background-color: #fff;
   padding: 1rem;
   height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -13,12 +16,29 @@
   padding: 0;
 }
 
-.navbar a {
-  color: #000;
+.navbar ul li a {
+  color: #424F71;
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+/* Hover effects for the navbar links */
+.navbar ul li a:hover {
+  color: #FF7900;
+}
+
+/* Animation on hover */
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+    color: #424F71;
+  }
+  100% {
+    transform: scale(1.1);
+    color: #FF7900;
+  }
+}
+
+.navbar ul li a:hover {
+  animation: hoverEffect .5s forwards;
 }
