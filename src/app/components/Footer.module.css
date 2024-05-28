@@ -1,12 +1,10 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #fff;
   color: #000;
   text-align: center;
   width: 100%;
   height: 80px;
-}
-
-.credit {
-  background-color: #c7d2fb;
-  text-align: right;
 }

@@ -3,16 +3,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #c7d2fb;
 }
 
 main {
   height: calc(100vh - 60px);
   overflow: scroll;
   text-align: center;
+  background-color: #c7d2fb;
+  line-height: 1.5;
 }
 
 h1, h2 {
@@ -42,8 +42,13 @@ a {
 }
 
 .app-page {
-  padding: 20px;
-  min-height: calc(100vh - 60px - 80px)
+  padding: 20px 10%;
+  min-height: calc(100vh - 60px - 25px - 80px)
+}
+
+.credit {
+  text-align: right;
+  height: 25px;
 }
 
 .small-text {
@@ -56,4 +61,25 @@ a {
 .small-text a {
   color: #fff;
   font-size: 12px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-content-section {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 15px;
+  margin: 15px;
+  flex-grow: 1;
+}
+
+header {
+  text-align: center;
+}
+
+p.tagline {
+  font-style: italic;
 }

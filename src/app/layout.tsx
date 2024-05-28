@@ -26,6 +26,9 @@ export default function RootLayout({
           <div className="app-page">
             {children}
           </div>
+          <div className="credit">
+            <p className='small-text'>Illustrations by <a href="https://icons8.com/illustrations/author/eEbrZFlkyZbD" target='_blank'>Anna A</a> from <a href="https://icons8.com/illustrations" target='_blank'>Ouch!</a></p>
+          </div>
           <Footer />
         </main>
         </div>
