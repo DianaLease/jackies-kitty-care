@@ -6,8 +6,41 @@ import Footer from "./components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "Jackie's Kitty Care",
-  description: "In-home cat sitting",
+  metadataBase: new URL("https://www.jackieskittycare.com"),
+  title: {
+    default: "Jackie's Kitty Care | In-Home Cat Sitting in Monmouth County, NJ",
+    template: "%s | Jackie's Kitty Care",
+  },
+  description:
+    "Reliable, loving in-home cat sitting in Middletown and Monmouth County, NJ. Jackie visits your home so your cat stays comfortable, safe, and stress-free while you're away.",
+  keywords: [
+    "cat sitting",
+    "in-home cat sitting",
+    "pet sitting",
+    "Monmouth County",
+    "Middletown NJ",
+    "cat sitter",
+    "New Jersey cat sitting",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.jackieskittycare.com",
+    siteName: "Jackie's Kitty Care",
+    title: "Jackie's Kitty Care | In-Home Cat Sitting in Monmouth County, NJ",
+    description:
+      "Reliable, loving in-home cat sitting in Middletown and Monmouth County, NJ. Your cat stays home — comfortable, safe, and stress-free.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Jackie's Kitty Care | In-Home Cat Sitting in Monmouth County, NJ",
+    description:
+      "Reliable, loving in-home cat sitting in Middletown and Monmouth County, NJ.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const inter = Inter({ subsets: ["latin"] });

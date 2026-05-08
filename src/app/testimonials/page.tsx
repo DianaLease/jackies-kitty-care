@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import illustration from "../../../public/purr-24.png";
+
+export const metadata: Metadata = {
+  title: "Testimonials",
+  description:
+    "See what cat owners in Monmouth County say about Jackie's Kitty Care — trusted in-home cat sitting in Middletown, NJ.",
+  alternates: { canonical: "/testimonials" },
+};
 
 export default function Testimonials() {
   return (
