@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
+import PageTransition from "./components/PageTransition";
 
 
 export const metadata: Metadata = {
@@ -57,7 +58,7 @@ export default function RootLayout({
         <Navbar />
         <main>
           <div className="app-page">
-            {children}
+            <PageTransition>{children}</PageTransition>
           </div>
           <div className="credit">
             <p className='small-text'>Illustrations by <a href="https://icons8.com/illustrations/author/eEbrZFlkyZbD" target='_blank'>Anna A</a> from <a href="https://icons8.com/illustrations" target='_blank'>Ouch!</a></p>
