@@ -20,25 +20,25 @@
   color: #424F71;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
+  padding-bottom: 4px;
 }
 
-/* Hover effects for the navbar links */
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF7900;
+  transition: width 0.25s ease;
+}
+
 .navbar ul li a:hover {
   color: #FF7900;
 }
 
-/* Animation on hover */
-@keyframes hoverEffect {
-  0% {
-    transform: scale(1);
-    color: #424F71;
-  }
-  100% {
-    transform: scale(1.1);
-    color: #FF7900;
-  }
-}
-
-.navbar ul li a:hover {
-  animation: hoverEffect .5s forwards;
+.navbar ul li a:hover::after {
+  width: 100%;
 }
