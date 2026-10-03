@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import icon from '../../../public/jackies-kitty-care-icon.svg';
 import styles from './NavBar.module.css';
 
 const links = [
@@ -11,6 +13,10 @@ const links = [
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
+      <Link href="/" className={styles.brand}>
+        <Image src={icon} width={88} alt="" priority />
+        <span>Jackie&apos;s Kitty Care</span>
+      </Link>
       <ul>
         {links.map(({ href, label }) => (
           <li key={href}>

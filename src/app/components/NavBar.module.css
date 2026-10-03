@@ -1,18 +1,41 @@
 .navbar {
   background-color: #fff;
-  padding: 1rem;
-  height: 60px;
+  padding: 0.5rem max(1.5rem, calc((100% - 960px) / 2));
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #424F71;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.brand img {
+  height: auto;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
   margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
   padding: 0;
 }
 
@@ -41,4 +64,10 @@
 
 .navbar ul li a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+  }
 }

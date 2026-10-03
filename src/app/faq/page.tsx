@@ -17,7 +17,6 @@ export default function FAQ() {
         src={illustration}
         height={200}
         alt="illustration of cat dancing with yarn"
-        unoptimized
       />
       <h2>Coming soon!</h2>
     </div>
