@@ -39,20 +39,22 @@ export default function Home() {
           __html: JSON.stringify(localBusinessSchema),
         }}
       />
-      <header>
-        <h1>Jackie&apos;s Kitty Care</h1>
-        <p className="tagline">
-          Expert in-home cat sitting services in Monmouth County, providing
-          personalized, loving care for your feline family members.
-        </p>
+      <header className="hero">
+        <div>
+          <h1>Loving in-home cat care in Monmouth County</h1>
+          <p className="tagline">
+            Expert in-home cat sitting in Middletown, NJ, providing
+            personalized, loving care for your feline family members.
+          </p>
+        </div>
+        <Image
+          src={illustration}
+          height={240}
+          alt="illustration of two cats with heart"
+          priority
+        />
       </header>
-      <Image
-        src={illustration}
-        height={200}
-        alt="illustration of two cats with heart"
-        unoptimized
-      />
-      <div>
+      <div className="home-text">
         <p>
           At <b>Jackie&apos;s Kitty Care</b>, I understand that your feline
           friends are part of the family. Based in Middletown, I offer reliable

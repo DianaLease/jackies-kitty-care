@@ -17,7 +17,6 @@ export default function Services() {
         src={illustration}
         height={200}
         alt="illustration of cat giving another cat a massage"
-        unoptimized
       />
       <h2>Coming soon!</h2>
     </div>
